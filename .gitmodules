@@ -1,0 +1,12 @@
+[submodule ".emacs.d/coffee-mode"]
+	path = .emacs.d/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
+[submodule ".emacs.d/haml-mode"]
+	path = .emacs.d/haml-mode
+	url = git://github.com/nex3/haml-mode.git
+[submodule ".emacs.d/sass-mode"]
+	path = .emacs.d/sass-mode
+	url = git://github.com/nex3/sass-mode.git
+[submodule ".emacs.d/rhtml-mode"]
+	path = .emacs.d/rhtml-mode
+	url = git://github.com/eschulte/rhtml.git
