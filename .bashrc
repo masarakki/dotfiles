@@ -23,8 +23,8 @@ function emacs {
 function find {
     /usr/bin/find $* 2>/dev/null
 }
-
-export PATH=$HOME/bin:$PATH
+export ANDROID_HOME=$HOME/.avm
+export PATH=$H$ANDROID_HOME/platform-tools:$PATHls:$PATH
 export PAGER=/usr/bin/lv
 export EDITOR=/usr/bin/vim
 
