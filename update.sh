@@ -24,3 +24,8 @@ else
     echo "$pubkey" > $authkey
 fi
 
+bashrc=$HOME/.bashrc
+grep "dotfiles/.bashrc" $bashrc > /dev/null
+if [ $? -ne 0 ]; then
+    echo "source \$HOME/dotfiles/.bashrc" >> $bashrc
+fi
