@@ -11,6 +11,7 @@ ln -nfs $dotdir/.rvmrc $HOME/.rvmrc
 
 if [ -e $HOME/Dropbox ]; then
     ln -nfs $HOME/Dropbox/.gitconfig $HOME/.gitconfig
+    cp $HOME/Dropbox/xchat_server.conf $HOME/.xchat2/servlist_.conf
 fi
 
 pubkey=`cat $dotdir/id_rsa.pub`
