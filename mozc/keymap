@@ -18,7 +18,7 @@ Composition	Ctrl Left	MoveCursorToBeginning
 Composition	Ctrl m	Commit
 Composition	Ctrl n	Commit
 Composition	Ctrl o	ConvertToHalfWidth
-Composition	Ctrl p	ConvertToFullAlphanumeric
+Composition	Ctrl p	ConvertToHalfAlphanumeric
 Composition	Ctrl Right	MoveCursorToEnd
 Composition	Ctrl Space	Convert
 Composition	Ctrl u	ConvertToHiragana
@@ -61,7 +61,7 @@ Conversion	Ctrl Left	SegmentFocusFirst
 Conversion	Ctrl m	Commit
 Conversion	Ctrl n	CommitOnlyFirstSegment
 Conversion	Ctrl o	ConvertToHalfWidth
-Conversion	Ctrl p	ConvertToFullAlphanumeric
+Conversion	Ctrl p	ConvertToHalfAlphanumeric
 Conversion	Ctrl Right	SegmentFocusLast
 Conversion	Ctrl Shift Left	SegmentWidthShrink
 Conversion	Ctrl Shift Right	SegmentWidthExpand
