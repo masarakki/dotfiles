@@ -11,6 +11,7 @@ alias gosh="rlwrap /usr/bin/gosh"
 alias nslookup="rlwrap /usr/bin/nslookup"
 alias less="lv -c"
 alias chrome="chromium-browser"
+alias be="bundle exec"
 
 function emacs {
     if [ "$TMUX" != "" ] ; then
