@@ -48,6 +48,16 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (add-hook 'before-save-hook (lambda () (set-buffer-file-coding-system 'unix)))
 
+(setq interprogram-paste-function
+      (lambda ()
+        (shell-command-to-string "xsel -b -o")))
+(setq interprogram-cut-function
+      (lambda (text &optional rest)
+        (let* ((process-connection-type nil)
+               (proc (start-process "xsel" "*Massages*" "xsel" "-b" "-i")))
+          (process-send-string proc text)
+          (process-send-eof proc))))
+
 (defun make-file-executable ()
   "Make the file of this buffer executable"
   (save-restriction
