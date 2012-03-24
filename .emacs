@@ -70,3 +70,4 @@
                 (message (concat "Wrote " name " (+x)"))))))))
 
 (add-hook 'after-save-hook 'make-file-executable)
+(setq vc-follow-symlinks t)
