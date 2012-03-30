@@ -10,3 +10,6 @@
 [submodule ".emacs.d/rhtml-mode"]
 	path = .emacs.d/rhtml-mode
 	url = git://github.com/eschulte/rhtml.git
+[submodule ".emacs.d/scala-mode"]
+	path = .emacs.d/scala-mode
+	url = git://github.com/Yasushi/scala-mode.git

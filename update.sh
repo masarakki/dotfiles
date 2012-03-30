@@ -32,5 +32,5 @@ if [ $? -ne 0 ]; then
     echo "source \$HOME/dotfiles/.bashrc" >> $bashrc
 fi
 
-
+cd $dotdir ; git submodule update --init ; cd -
 cd $HOME ; bundle install ; cd -
