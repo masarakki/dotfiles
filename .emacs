@@ -72,3 +72,5 @@
                 (message (concat "Wrote " name " (+x)"))))))))
 
 (add-hook 'after-save-hook 'make-file-executable)
+(setq vc-follow-symlinks t)
+(setq auto-revert-check-vc-info t)
