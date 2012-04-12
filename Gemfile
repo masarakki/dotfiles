@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'earthquake'
+gem 'earthquake', "0.8.5"
 gem 'jeweler'
 gem 'rails'
 gem 'ZenTest'
