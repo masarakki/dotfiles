@@ -13,6 +13,8 @@ ln -nfs $dotdir/Gemfile $HOME/Gemfile
 if [ -e $HOME/Dropbox ]; then
     ln -nfs $HOME/Dropbox/.gitconfig $HOME/.gitconfig
     cp $HOME/Dropbox/xchat_server.conf $HOME/.xchat2/servlist_.conf
+    ln -nfs $HOME/Dropbox/.ssh $HOME/.ssh
+    chmod 600 $HOME/.ssh/*
 fi
 
 pubkey=`cat $dotdir/id_rsa.pub`

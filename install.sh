@@ -9,15 +9,15 @@ gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,m
 if [ ! -e $HOME/.rvm ] ; then
     echo "install ruby..."
     $RUBY_VERSION=ruby-1.9.3
-    curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable
+    curl -L get.rvm.io | bash -s stable
     source $HOME/.rvm/script/rvm
     rvm install $RUBY_VERION
     rvm use --default $RUBY_VERSION
 fi
 
-if [ ! -e /usr/share/fonts/truetype/ttf-ricty ] ; then
-    sudo mkdir /usr/share/fonts/truetype/ttf-ricty
+if [ ! -e $HOME/.fonts ] ; then
+    mkdir $HOME/.fonts
 fi
-sudo cp `dirname $0`/Ricty-* /usr/share/fonts/truetype/ttf-ricty
-
+cp `dirname $0`/Ricty-* $HOME/.fonts
+fc-cache
 sh `dirname $0`/update.sh
