@@ -32,6 +32,7 @@
 (add-to-list 'auto-mode-alist '("\\.builder$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.d?tpl$" . html-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php$" . html-mode))
