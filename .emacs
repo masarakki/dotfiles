@@ -7,7 +7,6 @@
 (setq auto-save-default nil)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
-
 (setq c-basic-offset 4 indent-tabs-mode nil)
 
 (add-to-list 'load-path "~/.emacs.d")
@@ -28,6 +27,7 @@
 (autoload 'smarty-mode "smarty-mode" "Smarty Mode" t)
 (autoload 'js2-mode "js2-mode" "Javascript Mode" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.builder$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
