@@ -13,3 +13,6 @@
 [submodule ".emacs.d/scala-mode"]
 	path = .emacs.d/scala-mode
 	url = git://github.com/Yasushi/scala-mode.git
+[submodule ".emacs.d/markdown-mode"]
+	path = .emacs.d/markdown-mode
+	url = git://github.com/defunkt/markdown-mode.git
