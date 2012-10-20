@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-alias ls='ls -aF'
+alias ls='ls -aF --color=always'
 alias mysql='mysql -p'
 alias emasc='emacs'
 alias diff='colordiff'
@@ -26,7 +26,7 @@ function find {
 
 function google {
     search_str=`echo $* | sed -E 's/ /+/g'`
-    chromium-browser https://google.com/search?q=$search_str
+    chromium-browser "https://google.com/search?q=$search_str"
 }
 
 export ANDROID_HOME=$HOME/.avm

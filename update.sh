@@ -32,11 +32,14 @@ else
     echo "$pubkey" > $authkey
 fi
 
-bashrc=$HOME/.bashrc
-grep "dotfiles/.bashrc" $bashrc > /dev/null
-if [ $? -ne 0 ]; then
-    echo "source \$HOME/dotfiles/.bashrc" >> $bashrc
-fi
+for rcfile in $HOME/.bashrc $HOME/.zshrc
+do
+    grep "dotfiles/.bashrc" $rcfile > /dev/null
+    if [ $? -ne 0 ]; then
+        echo "source \$HOME/dotfiles/.bashrc" >> $rcfile
+    fi
+done
+
 
 cd $dotdir ; git submodule update --init ; cd -
 cd $HOME ; bundle install ; cd -
