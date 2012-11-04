@@ -18,6 +18,10 @@ fi
 if [ ! -e $HOME/.fonts ] ; then
     mkdir $HOME/.fonts
 fi
+
+if [ ! -e $HOME/.oh-my-zsh ] ; then
+    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+fi
 cp `dirname $0`/Ricty-* $HOME/.fonts
 fc-cache
 sh `dirname $0`/update.sh
