@@ -11,6 +11,7 @@ alias gosh="rlwrap /usr/bin/gosh"
 alias nslookup="rlwrap /usr/bin/nslookup"
 alias less="lv -c"
 alias be="bundle exec"
+alias rake="noglob rake"
 
 function emacs {
     if [ "$TMUX" != "" ] ; then
