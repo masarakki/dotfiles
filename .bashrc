@@ -12,6 +12,7 @@ alias nslookup="rlwrap /usr/bin/nslookup"
 alias less="lv -c"
 alias be="bundle exec"
 alias rake="noglob rake"
+alias nico="noglob nico.sh"
 
 function emacs {
     if [ "$TMUX" != "" ] ; then
