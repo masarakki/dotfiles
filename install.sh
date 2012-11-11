@@ -46,10 +46,10 @@ sudo apt-get -y install\
 
 if [ ! -e $HOME/.rvm ] ; then
     echo "install ruby..."
-    $RUBY_VERSION=ruby-1.9.3
+    RUBY_VERSION=ruby-1.9.3
     curl -L get.rvm.io | bash -s stable
-    source $HOME/.rvm/script/rvm
-    rvm install $RUBY_VERION
+    $HOME/.rvm/scripts/rvm
+    rvm install $RUBY_VERSION
     rvm use --default $RUBY_VERSION
 fi
 
