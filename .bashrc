@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 alias ls='ls -aF --color=always'
 alias mysql='mysql -p'
 alias emasc='emacs'
@@ -32,9 +28,9 @@ function google {
 }
 
 export ANDROID_HOME=$HOME/.avm
-export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$HOME/bin:$HOME/.rvm/bin:$ANDROID_HOME/platform-tools:$PATH
 export PAGER=/usr/bin/lv
 export EDITOR=/usr/bin/vim
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.nvm/nvm.sh" ]] && source "$HOME/.nvm/nvm.sh"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source $HOME/.rvm/scripts/rvm
+[[ -s "$HOME/.nvm/nvm.sh" ]] && source $HOME/.nvm/nvm.sh
