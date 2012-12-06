@@ -14,7 +14,12 @@ function emacs {
     if [ "$TMUX" != "" ] ; then
         tmux new-window "/usr/bin/emacs -nw $*"
     else
-        gnome-terminal -t emacs -x emacs -nw $*
+        which gnome-terminal
+        if [ $? -e 0 ] ; then
+            gnome-terminal -t emacs -x emacs -nw $*
+        else
+            emacs -nw $*
+        fi
     fi
 }
 
