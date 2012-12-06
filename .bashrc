@@ -18,7 +18,7 @@ function emacs {
         if [ $? -e 0 ] ; then
             gnome-terminal -t emacs -x emacs -nw $*
         else
-            emacs -nw $*
+            /usr/local/bin/emacs -nw $*
         fi
     fi
 }
