@@ -1,9 +1,9 @@
 if [ `uname` = 'FreeBSD' ] ; then
-    export PAGER=/usr/local/bin/lv
+    export PAGER='/usr/local/bin/lv -c'
     alias ls='ls -aFG'
     alias emacs='emacs -nw'
 else
-    export PAGER=/usr/bin/lv
+    export PAGER='/usr/bin/lv -c'
     alias ls='ls -aF --color=always'
     alias gosh="rlwrap /usr/bin/gosh"
     alias nslookup="rlwrap /usr/bin/nslookup"
