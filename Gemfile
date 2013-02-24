@@ -13,6 +13,7 @@ gem 'notify'
 gem 'libnotify'
 gem 'bundler'
 gem 'pry'
+gem 'pry-doc'
 gem 'gem-src'
 #gem 'gem-toolbox'
 
