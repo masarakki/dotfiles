@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'earthquake'
 gem 'jeweler'
-gem 'rails'
+gem 'rails', '3.2.13'
 gem 'rspec'
 gem 'redcarpet'
 gem 'hub'
