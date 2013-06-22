@@ -41,3 +41,8 @@ export EDITOR=/usr/bin/vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source $HOME/.rvm/scripts/rvm
 [[ -s "$HOME/.nvm/nvm.sh" ]] && source $HOME/.nvm/nvm.sh
+
+if [[ -e $HOME/Dropbox/.bashrc ]]
+then
+    source $HOME/Dropbox/.bashrc
+fi
