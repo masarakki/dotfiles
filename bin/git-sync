@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'hub'
+require 'pry'
+
+extend Hub::Context
+extend Hub::Commands
+
+if local_repo.remote_by_name "upstream"
+  src_repo = "upstream"
+  my_repo = "origin"
+else
+  src_repo = "origin"
+  my_repo = github_user(current_project.host)
+end
+
+old_branch = current_branch.short_name
+runner = Hub::Runner.new("fetch", src_repo, "--prune")
+runner.args.after ["checkout", "master"] unless old_branch == "master"
+runner.args.after ["fetch", my_repo , "--prune"]
+runner.args.after ["pull", "--rebase", src_repo, "master"]
+runner.args.after ["push", my_repo, "master"]
+runner.args.after ["checkout", old_branch] unless old_branch == "master"
+
+runner.execute
