@@ -48,6 +48,7 @@
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (setq ruby-indent-level 2)
+(setq coffee-tab-width 2)
 (setq ruby-indent-tabs-mode nil)
 (setq ruby-deep-indent-paren '(t))
 
