@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'hub'
-require 'pry'
 
 extend Hub::Context
 extend Hub::Commands
