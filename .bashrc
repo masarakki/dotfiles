@@ -7,6 +7,7 @@ else
     alias ls='ls -aF --color=always'
     alias gosh="rlwrap /usr/bin/gosh"
     alias nslookup="rlwrap /usr/bin/nslookup"
+    alias sqlite3="rlwrap /usr/bin/sqlite3"
 
     function emacs {
         if [ "$TMUX" != "" ] ; then
