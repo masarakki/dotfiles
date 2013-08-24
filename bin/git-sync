@@ -13,12 +13,14 @@ else
   my_repo = github_user(current_project.host)
 end
 
+have_my_repo = !! local_repo.remote_by_name(my_repo)
+
 old_branch = current_branch.short_name
 runner = Hub::Runner.new("fetch", src_repo, "--prune")
 runner.args.after ["checkout", "master"] unless old_branch == "master"
-runner.args.after ["fetch", my_repo , "--prune"]
+runner.args.after ["fetch", my_repo , "--prune"] if have_my_repo
 runner.args.after ["pull", "--rebase", src_repo, "master"]
-runner.args.after ["push", my_repo, "master"]
+runner.args.after ["push", my_repo, "master"] if have_my_repo
 runner.args.after ["checkout", old_branch] unless old_branch == "master"
 
 runner.execute
