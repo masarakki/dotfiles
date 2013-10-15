@@ -8,6 +8,7 @@ else
     alias gosh="rlwrap /usr/bin/gosh"
     alias nslookup="rlwrap /usr/bin/nslookup"
     alias sqlite3="rlwrap /usr/bin/sqlite3"
+    alias unzip_win="unzip -O sjis"
 
     function emacs {
         if [ "$TMUX" != "" ] ; then
