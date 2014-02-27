@@ -10,7 +10,7 @@ if local_repo.remote_by_name "upstream"
   my_repo = "origin"
 else
   src_repo = "origin"
-  my_repo = github_user(current_project.host)
+  my_repo = github_user(local_repo.main_host)
 end
 
 have_my_repo = !! local_repo.remote_by_name(my_repo)
