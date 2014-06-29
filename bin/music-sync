@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd ~/Music ; rsync -avz --delete . kaga:/home/masaki/Music ; cd -
