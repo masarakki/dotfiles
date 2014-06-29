@@ -10,6 +10,7 @@
 (setq c-basic-offset 4 indent-tabs-mode nil)
 
 (add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/cl-lib")
 (add-to-list 'load-path "~/.emacs.d/rhtml-mode")
 (add-to-list 'load-path "~/.emacs.d/mmm-mode")
 (add-to-list 'load-path "~/.emacs.d/coffee-mode")
@@ -17,6 +18,7 @@
 (add-to-list 'load-path "~/.emacs.d/sass-mode")
 (add-to-list 'load-path "~/.emacs.d/scala-mode")
 (add-to-list 'load-path "~/.emacs.d/markdown-mode")
+(require 'cl-lib)
 (require 'ruby-mode)
 (require 'rhtml-mode)
 (require 'yaml-mode)

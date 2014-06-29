@@ -16,3 +16,6 @@
 [submodule ".emacs.d/markdown-mode"]
 	path = .emacs.d/markdown-mode
 	url = git://github.com/defunkt/markdown-mode.git
+[submodule ".emacs.d/cl-lib"]
+	path = .emacs.d/cl-lib
+	url = git://github.com/emacsmirror/cl-lib
