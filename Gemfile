@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'earthquake'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.4'
 gem 'rspec'
 gem 'redcarpet'
 gem 'hub'
