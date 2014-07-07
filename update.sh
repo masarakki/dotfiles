@@ -9,6 +9,7 @@ ln -nfs $dotdir/.emacs.d $HOME/.emacs.d
 ln -nfs $dotdir/.tmux.conf $HOME/.tmux.conf
 ln -nfs $dotdir/.gemrc $HOME/.gemrc
 ln -nfs $dotdir/Gemfile $HOME/Gemfile
+ln -nfs $dotdir/Gemfile.lock $HOME/Gemfile.lock
 ln -nfs $dotdir/.gitignore $HOME/.gitignore
 
 if [ -e $HOME/Dropbox ]; then
