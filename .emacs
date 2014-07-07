@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
@@ -8,12 +9,13 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 
 (el-get 'sync '(mmm-mode
-                markdown-mode
-                ruby-mode ruby-end rails-el rhtml-mode flymake-ruby
-                coffee-mode haml-mode sass-mode scss-mode yaml-mode
-                js2-mode scala-mode clojure-mode
+                markdown-mode gh gist git-gutter git-blame
+                enh-ruby-mode ruby-end rails-el rhtml-mode ri yard-mode
+                flymake flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
+                coffee-mode haml-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
+                js3-mode scala-mode2 clojure-mode json-mode llvm-mode
                 php-mode-improved smarty-mode
-                elunit cmake-mode))
+                nginx-mode elunit cmake-mode))
 
 (custom-set-variables
  '(inhibit-startup-screen t)
