@@ -1,2 +1,3 @@
 .emacs.d/auto-save-list
+.emacs.d/el-get
 vendor/bundle
