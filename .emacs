@@ -1,3 +1,20 @@
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+
+(el-get 'sync '(mmm-mode
+                markdown-mode
+                ruby-mode ruby-end rails-el rhtml-mode flymake-ruby
+                coffee-mode haml-mode sass-mode scss-mode yaml-mode
+                js2-mode scala-mode clojure-mode
+                php-mode-improved smarty-mode
+                elunit cmake-mode))
+
 (custom-set-variables
  '(inhibit-startup-screen t)
  '(safe-local-variable-values (quote ((encoding . utf-8)))))
@@ -9,27 +26,6 @@
 (setq-default tab-width 4)
 (setq c-basic-offset 4 indent-tabs-mode nil)
 
-(add-to-list 'load-path "~/.emacs.d")
-(add-to-list 'load-path "~/.emacs.d/cl-lib")
-(add-to-list 'load-path "~/.emacs.d/rhtml-mode")
-(add-to-list 'load-path "~/.emacs.d/mmm-mode")
-(add-to-list 'load-path "~/.emacs.d/coffee-mode")
-(add-to-list 'load-path "~/.emacs.d/haml-mode")
-(add-to-list 'load-path "~/.emacs.d/sass-mode")
-(add-to-list 'load-path "~/.emacs.d/scala-mode")
-(add-to-list 'load-path "~/.emacs.d/markdown-mode")
-(require 'cl-lib)
-(require 'ruby-mode)
-(require 'rhtml-mode)
-(require 'yaml-mode)
-(require 'php-mode)
-(require 'coffee-mode)
-(require 'haml-mode)
-(require 'sass-mode)
-(require 'scala-mode-auto)
-(require 'markdown-mode)
-(autoload 'smarty-mode "smarty-mode" "Smarty Mode" t)
-(autoload 'js2-mode "js2-mode" "Javascript Mode" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
