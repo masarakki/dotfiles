@@ -9,7 +9,7 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 
 (el-get 'sync '(mmm-mode
-                markdown-mode gh gist git-gutter git-blame
+                markdown-mode gh gist git-gutter git-blame magit
                 enh-ruby-mode ruby-end rails-el rhtml-mode ri yard-mode
                 flymake flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
