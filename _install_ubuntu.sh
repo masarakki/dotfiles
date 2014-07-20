@@ -18,10 +18,10 @@ then
   rm dropbox_amd64.deb
 fi
 
-sudo apt-get -f install
+sudo apt-get -y -f install
 
 sudo apt-get -y install\
- build-essential\
+ build-essential texinfo autoconf automake\
  google-chrome-stable\
  dropbox\
  git gitk\
@@ -64,7 +64,7 @@ cp `dirname $0`/Ricty-* $HOME/.fonts
 #fc-cache
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Ricty Regular 14"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/custom_command --type string "tmux"
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type int 32
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 96
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type int 28
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 108
 
 sh `dirname $0`/update.sh
