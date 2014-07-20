@@ -9,7 +9,7 @@ fi
 
 if [ ! -e $HOME/.rvm ] ; then
     echo "install ruby..."
-    RUBY_VERSION=ruby-1.9.3
+    RUBY_VERSION=ruby-2.1.2
     curl -L get.rvm.io | bash -s stable --ruby
     $HOME/.rvm/scripts/rvm
     rvm install $RUBY_VERSION
