@@ -22,7 +22,8 @@ sudo apt-get -f install
 
 sudo apt-get -y install\
  build-essential\
- google-chrome-stable
+ google-chrome-stable\
+ dropbox\
  git gitk\
  zsh\
  lv\
@@ -47,7 +48,7 @@ sudo apt-get -y install\
  xsel\
  libsasl2-dev\
  imagemagick libmagickcore-dev\
- libav-tools
+ libav-tools\
  colordiff
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
