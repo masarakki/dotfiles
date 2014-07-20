@@ -10,6 +10,7 @@ sudo apt-get -y install\
  rlwrap\
  tmux\
  vim emacs\
+ fcitx-mozc\
  curl libcurl4-openssl-dev\
  libreadline6-dev\
  bison\
