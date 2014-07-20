@@ -6,6 +6,10 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
+sudo dpkg -i dropbox_1.6.0_amd64.deb
+rm drobox_1.6.0_amd64.deb
+
 sudo apt-get -f install
 
 sudo apt-get -y install\
