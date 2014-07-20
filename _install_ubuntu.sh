@@ -18,6 +18,12 @@ then
   rm dropbox_amd64.deb
 fi
 
+dpkg -l heroku
+if [ $? -ne 0 ]
+then
+  wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+fi
+
 sudo apt-get -y -f install
 
 sudo apt-get -y install\
