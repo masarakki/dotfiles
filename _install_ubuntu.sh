@@ -10,27 +10,17 @@ sudo apt-get -y install\
  rlwrap\
  tmux\
  vim emacs\
- curl libcurl3 libcurl4-openssl-dev\
- chromium-browser\
- ibus-mozc\
+ curl libcurl4-openssl-dev\
  libreadline6-dev\
  bison\
  sqlite3 libsqlite3-dev\
  libxml2 libxml2-dev\
  libxslt1.1 libxslt1-dev\
  openssh-server libssl-dev\
- yaml-mode\
  nkf\
  openjdk-7-jre openjdk-7-jre-headless openjdk-7-jdk\
- scala scala-library\
  libv8-dev\
  tk8.5\
- arduino\
- eclipse\
- g++\
- gauche\
- coffeescript\
- xchat\
  compizconfig-settings-manager\
  convmv\
  libdbus-glib-1-dev\
@@ -38,20 +28,10 @@ sudo apt-get -y install\
  xsel\
  libsasl2-dev\
  imagemagick libmagickcore-dev\
- ffmpeg libavcodec-extra-53\
- redis-server\
+ libav-tools
  colordiff
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
-
-if [ ! -e $HOME/.rvm ] ; then
-    echo "install ruby..."
-    RUBY_VERSION=ruby-1.9.3
-    curl -L get.rvm.io | bash -s stable
-    $HOME/.rvm/scripts/rvm
-    rvm install $RUBY_VERSION
-    rvm use --default $RUBY_VERSION
-fi
 
 if [ ! -e $HOME/.fonts ] ; then
     mkdir $HOME/.fonts

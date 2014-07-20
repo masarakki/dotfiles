@@ -14,10 +14,6 @@ ln -nfs $dotdir/.gitignore $HOME/.gitignore
 
 if [ -e $HOME/Dropbox ]; then
     ln -nfs $HOME/Dropbox/.gitconfig $HOME/.gitconfig
-    if [ ! -e $HOME/.xchat2 ]; then
-        mkdir $HOME/.xchat2
-    fi
-    cp $HOME/Dropbox/xchat_server.conf $HOME/.xchat2/servlist_.conf
     ln -nfs $HOME/Dropbox/.ssh $HOME/.ssh
     chmod 600 $HOME/.ssh/*
 fi
@@ -40,7 +36,3 @@ do
         echo "source \$HOME/dotfiles/.bashrc" >> $rcfile
     fi
 done
-
-
-cd $dotdir ; git submodule update --init ; cd -
-cd $HOME ; bundle install ; cd -
