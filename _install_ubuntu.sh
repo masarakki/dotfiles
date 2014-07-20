@@ -2,13 +2,21 @@
 
 echo "installing...."
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
+dpkg -l google-chrome-stable
+if [ $? -ne 0 ]
+then
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  sudo dpkg -i google-chrome-stable_current_amd64.deb
+  rm google-chrome-stable_current_amd64.deb
+fi
 
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb
-sudo dpkg -i dropbox_1.6.0_amd64.deb
-rm drobox_1.6.0_amd64.deb
+dpkg -l dropbox
+if [ $? -ne 0 ]
+then
+  wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_amd64.deb -O dropbox_amd64.deb
+  sudo dpkg -i dropbox_amd64.deb
+  rm dropbox_amd64.deb
+fi
 
 sudo apt-get -f install
 
