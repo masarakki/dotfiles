@@ -3,9 +3,9 @@
 echo "installing...."
 
 sudo apt-get -y install\
+ build-essential\
  git gitk\
  zsh\
- autoconf2.13\
  lv\
  rlwrap\
  tmux\
@@ -21,7 +21,6 @@ sudo apt-get -y install\
  nkf\
  openjdk-7-jre openjdk-7-jre-headless openjdk-7-jdk\
  libv8-dev\
- tk8.5\
  compizconfig-settings-manager\
  convmv\
  libdbus-glib-1-dev\
