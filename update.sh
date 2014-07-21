@@ -10,6 +10,7 @@ ln -nfs $dotdir/.gemrc $HOME/.gemrc
 ln -nfs $dotdir/Gemfile $HOME/Gemfile
 ln -nfs $dotdir/Gemfile.lock $HOME/Gemfile.lock
 ln -nfs $dotdir/.gitignore $HOME/.gitignore
+ln -nfs $dotdir/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 
 if [ -e $HOME/Dropbox ]; then
     ln -nfs $HOME/Dropbox/.gitconfig $HOME/.gitconfig
@@ -27,11 +28,3 @@ if [ -e $authkey ]; then
 else
     echo "$pubkey" > $authkey
 fi
-
-for rcfile in $HOME/.bashrc $HOME/.zshrc
-do
-    grep "dotfiles/.bashrc" $rcfile > /dev/null
-    if [ $? -ne 0 ]; then
-        echo "source \$HOME/dotfiles/.bashrc" >> $rcfile
-    fi
-done
