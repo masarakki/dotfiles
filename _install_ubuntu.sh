@@ -84,4 +84,5 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 
+sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.conf/fcitx/config
 sh `dirname $0`/update.sh
