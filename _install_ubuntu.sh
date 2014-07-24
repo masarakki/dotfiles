@@ -75,9 +75,12 @@ cp `dirname $0`/Ricty-* $HOME/.fonts
 #fc-cache
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_system_font --type bool false
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Ricty Regular 14"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_custom_command --type bool true
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/custom_command --type string "tmux"
-gconftool-2 --set /apps/gnome-terminal/prpfiles/Default/use_custom_command --type bool true
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type int 28
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 108
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "#000000000000:#AAAA00000000:#0000AAAA0000:#AAAA55550000:#00000000AAAA:#AAAA0000AAAA:#0000AAAAAAAA:#AAAAAAAAAAAA:#555555555555:#FFFF55555555:#5555FFFF5555:#FFFFFFFF5555:#55555555FFFF:#FFFF5555FFFF:#5555FFFFFFFF:#FFFFFFFFFFFF"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 
 sh `dirname $0`/update.sh
