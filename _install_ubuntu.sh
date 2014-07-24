@@ -2,6 +2,11 @@
 
 echo "installing...."
 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get autoremove
+
 dpkg -l google-chrome-stable
 if [ $? -ne 0 ]
 then
