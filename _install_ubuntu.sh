@@ -68,8 +68,10 @@ if [ ! -e $HOME/.oh-my-zsh ] ; then
 fi
 cp `dirname $0`/Ricty-* $HOME/.fonts
 #fc-cache
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_system_font --type bool false
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Ricty Regular 14"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/custom_command --type string "tmux"
+gconftool-2 --set /apps/gnome-terminal/prpfiles/Default/use_custom_command --type bool true
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type int 28
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 108
 
