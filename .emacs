@@ -10,7 +10,7 @@
 
 (el-get 'sync '(mmm-mode
                 markdown-mode gh gist git-gutter git-blame magit
-                enh-ruby-mode ruby-end rails-el rhtml-mode ri yard-mode
+                Enhanced-Ruby-Mode ruby-end rails-el rhtml-mode ri yard-mode
                 flymake flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
                 js3-mode scala-mode2 clojure-mode json-mode llvm-mode
