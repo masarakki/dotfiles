@@ -11,7 +11,8 @@
 (el-get 'sync '(mmm-mode
                 markdown-mode gh gist git-gutter git-blame magit
                 Enhanced-Ruby-Mode ruby-end rails-el rhtml-mode ri yard-mode
-                flymake flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
+                flymake flymake-cursor flymake-extension flymake-html-validator
+                flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
                 js3-mode scala-mode2 clojure-mode json-mode llvm-mode
                 php-mode-improved smarty-mode
@@ -89,3 +90,6 @@
 (show-paren-mode t)
 (setq kill-whole-line t)
 (global-set-key "\C-h" 'delete-backward-char)
+(custom-set-faces
+ '(flymake-errline ((((class color)) (:background "red" :foreground "white") )))
+ '(flymake-warnline ((((class color)) (:background "gray")))))
