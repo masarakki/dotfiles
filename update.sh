@@ -18,7 +18,7 @@ if [ -e $HOME/Dropbox ]; then
     chmod 600 $HOME/.ssh/*
 fi
 
-if [ -e /etc/fonts/conf.d/65-droid-sans-fonts.conf] ; then
+if [ -e /etc/fonts/conf.d/65-droid-sans-fonts.conf ] ; then
     cd /etc/fonts/conf.d
     sudo mv 65-droid-sans-fonts.conf 65-droid-sans-fonts.conf.bak
     sudo fc-cache -s -f -v /usr/share/fonts/truetype/droid
