@@ -61,6 +61,7 @@ sudo apt-get -y install\
  imagemagick libmagickcore-dev\
  libav-tools\
  colordiff\
+ textlive texlive-lang-cjk\
  fonts-ipafont
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
