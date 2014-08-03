@@ -1,6 +1,8 @@
 #!/bin/zsh
 
 alias ls='ls -aF --color=always'
+alias open='gnome-open'
+
 function emacs {
     if [ "$TMUX" != "" ] ; then
         tmux new-window "/usr/bin/emacs -nw $*"
@@ -15,7 +17,7 @@ function find {
 
 function google {
     search_str=`echo $* | sed -E 's/ /+/g'`
-    gnome-open "https://google.com/search?q=$search_str"
+    open "https://google.com/search?q=$search_str"
 }
 
 alias mysql='mysql -p'
