@@ -3,8 +3,8 @@
 echo "installing...."
 
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
 sudo apt-get autoremove
 
 dpkg -l google-chrome-stable
