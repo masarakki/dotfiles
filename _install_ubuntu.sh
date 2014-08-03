@@ -60,7 +60,8 @@ sudo apt-get -y install\
  libsasl2-dev\
  imagemagick libmagickcore-dev\
  libav-tools\
- colordiff
+ colordiff\
+ fonts-ipafont
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
 
@@ -79,8 +80,7 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_custom_command --typ
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/custom_command --type string "tmux"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type int 28
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 108
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "
-#000000000000:#AAAA00000000:#0000AAAA0000:#AAAA55550000:#00000000AAAA:#AAAA0000AAAA:#0000AAAAAAAA:#AAAAAAAAAAAA:#555555555555:#FFFF55555555:#5555FFFF5555:#FFFFFFFF5555:#55555555FFFF:#FFFF5555FFFF:#5555FFFFFFFF:#FFFFFFFFFFFF"
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "#000000000000:#CCCC00000000:#4E4E9A9A0606:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#EFEF29292929:#8A8AE2E23434:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 
