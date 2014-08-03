@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 alias ls='ls -aF --color=always'
 function emacs {
     if [ "$TMUX" != "" ] ; then

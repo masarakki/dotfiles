@@ -10,7 +10,7 @@ ln -nfs $dotdir/.gemrc $HOME/.gemrc
 ln -nfs $dotdir/Gemfile $HOME/Gemfile
 ln -nfs $dotdir/Gemfile.lock $HOME/Gemfile.lock
 ln -nfs $dotdir/.gitignore $HOME/.gitignore
-ln -nfs $dotdir/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
+find $dotdir/zshrc/* -type f -print | xargs -I {} ln -nfs {} $HOME/.oh-my-zsh/custom/
 
 if [ -e $HOME/Dropbox ]; then
     ln -nfs $HOME/Dropbox/.gitconfig $HOME/.gitconfig
