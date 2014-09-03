@@ -36,6 +36,7 @@ sudo apt-get -y install\
  google-chrome-stable\
  dropbox\
  git gitk\
+ mercurial\
  zsh\
  lv\
  rlwrap\
@@ -61,7 +62,7 @@ sudo apt-get -y install\
  imagemagick libmagickcore-dev\
  libav-tools\
  colordiff\
- textlive texlive-lang-cjk\
+ texlive texlive-lang-cjk\
  fonts-ipafont
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
@@ -85,5 +86,5 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "#
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 
-sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.conf/fcitx/config
+sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.config/fcitx/config
 sh `dirname $0`/update.sh
