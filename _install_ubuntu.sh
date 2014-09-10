@@ -63,7 +63,8 @@ sudo apt-get -y install\
  libav-tools\
  colordiff\
  texlive texlive-lang-cjk\
- fonts-ipafont
+ fonts-ipafont\
+ hexchat
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
 
