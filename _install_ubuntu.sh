@@ -89,5 +89,7 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "#
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
 sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.config/fcitx/config
 sh `dirname $0`/update.sh
