@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd ~/Download/Cosplay ; rsync -avz --delete . guest@kaga:/home/guest/CosPlay ; cd -
