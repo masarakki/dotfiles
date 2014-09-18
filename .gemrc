@@ -1,2 +1,2 @@
 gem: --no-ri --no-rdoc
-gemsrc_clone_root: ~/src/gems
+gemsrc_use_ghq: true

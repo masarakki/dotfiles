@@ -49,6 +49,7 @@ GEM
     eventmachine (1.0.3)
     ffi (1.9.3)
     formatador (0.2.5)
+    gem-src (0.6.3)
     gist (4.3.0)
     guard (2.6.1)
       formatador (>= 0.2.4)
@@ -160,6 +161,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   earthquake
+  gem-src
   gist
   guard
   hub
