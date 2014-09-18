@@ -64,7 +64,16 @@ sudo apt-get -y install\
  colordiff\
  texlive texlive-lang-cjk\
  fonts-ipafont\
- hexchat
+ hexchat\
+ python-pip
+
+rehash
+
+export GOPATH=$HOME
+go get github.com/motemen/ghq
+sudo pip install percol --upgrade
+
+rehash
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
 
@@ -100,4 +109,3 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.config/fcitx/config
-sh `dirname $0`/update.sh
