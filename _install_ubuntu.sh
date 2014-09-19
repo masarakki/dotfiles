@@ -71,7 +71,7 @@ rehash
 
 export GOPATH=$HOME
 go get github.com/motemen/ghq
-sudo pip install percol --upgrade
+go get github.com/peco/peco/cmd/peco
 
 rehash
 

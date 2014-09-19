@@ -1,9 +1,9 @@
 #!/bin/zsh
 
 function percol-src () {
-    local selected_dir=$(ghq list --full-path | percol --query "$LBUFFER")
+    local selected_dir=$(ghq list | peco --query "$LBUFFER")
     if [ -n "$selected_dir" ]; then
-        BUFFER="cd ${selected_dir}"
+        BUFFER="cd `git config ghq.root`/${selected_dir}"
         zle accept-line
     fi
     zle clear-screen
