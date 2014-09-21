@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'earthquake'
-gem 'rails', '4.1.5'
+gem 'rails', '4.1.6'
 gem 'rspec'
 gem 'redcarpet'
 gem 'hub'
@@ -12,3 +12,4 @@ gem 'libnotify'
 gem 'bundler'
 gem 'pry'
 gem 'pry-doc'
+gem 'rubocop'
