@@ -67,13 +67,13 @@ sudo apt-get -y install\
  hexchat\
  python-pip
 
-rehash
+hash -r
 
 export GOPATH=$HOME
 go get github.com/motemen/ghq
 go get github.com/peco/peco/cmd/peco
 
-rehash
+hash -r
 
 #gconftool-2 -s "/apps/metacity/general/button_layout" -t string "menu:minimize,maximize,close"
 
