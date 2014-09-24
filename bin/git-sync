@@ -1,26 +1,11 @@
-#!/usr/bin/env ruby
+#!/bin/sh
 
-require 'hub'
+user=`git config github.user`
+git remote show ${user} > /dev/null 2>&1
+has_repo=$?
 
-extend Hub::Context
-extend Hub::Commands
-
-if local_repo.remote_by_name "upstream"
-  src_repo = "upstream"
-  my_repo = "origin"
-else
-  src_repo = "origin"
-  my_repo = github_user(local_repo.main_host)
-end
-
-have_my_repo = !! local_repo.remote_by_name(my_repo)
-
-old_branch = current_branch.short_name
-runner = Hub::Runner.new("fetch", src_repo, "--prune")
-runner.args.after ["checkout", "master"] unless old_branch == "master"
-runner.args.after ["fetch", my_repo , "--prune"] if have_my_repo
-runner.args.after ["pull", "--rebase", src_repo, "master"]
-runner.args.after ["push", my_repo, "master"] if have_my_repo
-runner.args.after ["checkout", old_branch] unless old_branch == "master"
-
-runner.execute
+git fetch --all --prune
+git stash
+git pull --rebase origin master
+if [ has_repo = 0 ]; then git push ${user} master; fi
+git stash pop
