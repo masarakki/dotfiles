@@ -8,5 +8,5 @@ git fetch --all --prune
 modified=`git status | grep modified | wc -l`
 if [ $modified -gt 0 ] ; then git stash ; fi
 git pull --rebase origin master
-if [ has_repo = 0 ] ; then git push ${user} master; fi
+if [ $has_repo = 0 ] ; then git push ${user} master; fi
 if [ $modified -gt 0 ] ; then git stash pop ; fi
