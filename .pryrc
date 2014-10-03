@@ -1,0 +1,1 @@
+ENV['PAGER'] = 'less'
