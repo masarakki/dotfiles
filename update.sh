@@ -7,6 +7,7 @@ dotdir=`dirname $dotdir | sed -E 's/\/\.//'`
 ln -nfs $dotdir/.emacs $HOME/.emacs
 ln -nfs $dotdir/.tmux.conf $HOME/.tmux.conf
 ln -nfs $dotdir/.gemrc $HOME/.gemrc
+ln -nfs $dotdir/.pryrc $HOME/.pryrc
 ln -nfs $dotdir/Gemfile $HOME/Gemfile
 ln -nfs $dotdir/Gemfile.lock $HOME/Gemfile.lock
 ln -nfs $dotdir/.gitignore $HOME/.gitignore
