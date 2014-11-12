@@ -7,7 +7,7 @@ function emacs {
     if [ "$TMUX" != "" ] ; then
         tmux new-window "/usr/bin/emacs -nw $*"
     else
-        gnome-terminal -t emacs -x emacs -new $*
+        gnome-terminal -t emacs -x emacs -nw $*
     fi
 }
 
