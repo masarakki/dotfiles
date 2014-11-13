@@ -32,3 +32,4 @@ alias nico="noglob nico.sh"
 alias gosh="rlwrap /usr/bin/gosh"
 alias nslookup="rlwrap /usr/bin/nslookup"
 alias sqlite3="rlwrap /usr/bin/sqlite3"
+alias pr='hub pull-request'
