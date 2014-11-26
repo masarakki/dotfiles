@@ -107,5 +107,6 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type 
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool false
 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
+setxkbmap -option ctrl:swapcaps
 
 sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.config/fcitx/config
