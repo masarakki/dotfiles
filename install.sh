@@ -3,18 +3,21 @@
 echo "installing...."
 basename=`dirname $0`
 
-if [ `uname` = 'Linux' ] ; then
-    sh $basename/_install_ubuntu.sh
-fi
+sh $basename/pkg/chrome.sh
+sh $basename/pkg/dropbox.sh
+sh $basename/pkg/heroku.sh
 
-if [ ! -e $HOME/.rvm ] ; then
-    echo "install ruby..."
-    gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-    RUBY_VERSION=ruby-2.1.2
-    \curl -sSL get.rvm.io | bash -s stable
-    $HOME/.rvm/scripts/rvm
-    rvm install $RUBY_VERSION
-    rvm use --default $RUBY_VERSION
-fi
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
+sudo apt-get autoremove
+
+sh $basename/install/packages.sh
+sh $basename/install/gvm.sh
+sh $basename/install/rvm.sh
+sh $basename/install/ghq.sh
+sh $basename/install/hub.sh
+sh $basename/install/fonts.sh
+sh $basename/install/oh-my-zsh.sh
 
 sh $basename/update.sh
