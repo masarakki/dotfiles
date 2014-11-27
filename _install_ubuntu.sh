@@ -65,7 +65,8 @@ sudo apt-get -y install\
  texlive texlive-lang-cjk\
  fonts-ipafont\
  hexchat\
- python-pip
+ python-pip\
+ golang golang-go.tools
 
 hash -r
 
