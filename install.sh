@@ -6,6 +6,8 @@ basename=`dirname $0`
 $basename/pkg/chrome
 $basename/pkg/dropbox
 $basename/pkg/heroku
+$basename/pkg/chef
+$basename/pkg/vagrant
 
 sudo apt-get update
 sudo apt-get -y upgrade
