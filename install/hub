@@ -1,7 +1,8 @@
 #!/bin/sh
 
 export GOPATH=$HOME
-ghq get github.com/github/hub
+ghq get github/hub
 cd $GOPATH/src/github.com/github/hub
+git pull origin master
 ./script/build -o $HOME/bin/hub
 cd -

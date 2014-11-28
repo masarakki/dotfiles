@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
-if [ ! -e $HOME/.rvm ] ; then
+if [ ! -e $HOME/.gvm ] ; then
     bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
     GOVERSION=go1.3.3
-    $HOME/.gvm/scripts/rvm
+    source $HOME/.gvm/scripts/gvm
 
     gvm install $GOVERSION
     gvm use $GOVERSION --default
