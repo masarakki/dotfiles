@@ -11,5 +11,12 @@ branch=`git branch | grep '*' | cut -f 2 -d ' '`
 git checkout master
 git pull --rebase origin master
 if [ $has_repo = 0 ] ; then git push ${user} master; fi
-git checkout ${branch}
+if [ $branch != 'master' ] ; then
+    if [ `git branch --merged | grep ${branch} | wc -l` -eq 1 ]
+    then
+        git branch -d ${branch}
+    else
+        git checkout ${branch}
+    fi
+fi
 if [ $modified -gt 0 ] ; then git stash pop ; fi
