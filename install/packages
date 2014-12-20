@@ -26,6 +26,7 @@ sudo apt-get -y install\
  convmv\
  libdbus-glib-1-dev\
  mysql-server libmysql++-dev\
+ redis-server\
  xsel\
  libsasl2-dev\
  imagemagick libmagickcore-dev\
