@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo apt-get install git
+
 ghu='masarakki'
 repo='dotfiles'
 
