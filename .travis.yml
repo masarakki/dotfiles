@@ -1,3 +1,4 @@
+script: echo 'hello'
 deploy:
   provider: heroku
   app: masarakki-dotfiles
