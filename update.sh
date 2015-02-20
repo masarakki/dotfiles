@@ -4,13 +4,13 @@ echo "updating...."
 dotdir=`pwd`/$0
 dotdir=`dirname $dotdir | sed -E 's/\/\.//'`
 
-ln -nfs $dotdir/.emacs $HOME/.emacs
-ln -nfs $dotdir/.tmux.conf $HOME/.tmux.conf
-ln -nfs $dotdir/.gemrc $HOME/.gemrc
-ln -nfs $dotdir/.pryrc $HOME/.pryrc
-ln -nfs $dotdir/Gemfile $HOME/Gemfile
-ln -nfs $dotdir/Gemfile.lock $HOME/Gemfile.lock
-ln -nfs $dotdir/.gitignore $HOME/.gitignore
+ln -nfs $dotdir/home/.emacs $HOME/.emacs
+ln -nfs $dotdir/home/.tmux.conf $HOME/.tmux.conf
+ln -nfs $dotdir/home/.gemrc $HOME/.gemrc
+ln -nfs $dotdir/home/.pryrc $HOME/.pryrc
+ln -nfs $dotdir/home/Gemfile $HOME/Gemfile
+ln -nfs $dotdir/home/Gemfile.lock $HOME/Gemfile.lock
+ln -nfs $dotdir/home/.gitignore $HOME/.gitignore
 find $dotdir/zshrc/* -type f -print | xargs -I {} ln -nfs {} $HOME/.oh-my-zsh/custom/
 
 if [ -e $HOME/Dropbox ]; then
@@ -43,7 +43,7 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 108
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool true
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_darkness --type float 0.9
+gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_darkness --type float 0.98
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_type --type string "transparent"
 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
