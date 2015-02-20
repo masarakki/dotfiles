@@ -1,0 +1,5 @@
+deploy:
+  provider: heroku
+  app: masarakki-dotfiles
+  api_key:
+    secure: Ud4MgG5bgJVjLQ5r7mYW7EChHGckiIGkN5VeSDPJCTOQobkY1hnvnZwzXhf8qKvbJ+YWKjkZikXreQWgOrNLnzuF6IF4zjXfc3C3pW7NaMT5K1YyHwiCzVYNUquS4Nz2XXR8apTnnjmyUikmHjB8AdkCZx9bBUYBsrAmIF5OPF8=

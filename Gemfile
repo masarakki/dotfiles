@@ -1,14 +1,5 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'earthquake'
-gem 'rails', '4.2.0'
-gem 'rspec'
-gem 'redcarpet'
-gem 'gist'
-gem 'guard'
-gem 'gem-src'
-gem 'libnotify'
-gem 'bundler'
-gem 'pry'
-gem 'pry-doc'
-gem 'rubocop'
+ruby '2.2.0'
+
+gem 'sinatra', require: false
