@@ -47,6 +47,7 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_darkness --ty
 gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_type --type string "transparent"
 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
+gsettings set org.gnome.desktop.media-handling automount-open false
 setxkbmap -option ctrl:nocaps
 
 sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.config/fcitx/config
