@@ -28,7 +28,7 @@ if [ -e /etc/fonts/conf.d/65-droid-sans-fonts.conf ] ; then
     cd -
 fi
 
-if [ `xrandr | grep current | sed -E 's/.*current ([0-9]+).*/\1/'` -gt 2048 ]
+if [ `xrandr | grep current | sed -E 's/.*current ([0-9]+) x ([0-9]+).*/\2/'` -gt 2048 ]
 then
     fontsize=16
 else
