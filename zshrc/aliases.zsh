@@ -3,15 +3,6 @@
 alias ls='ls -aF --color=always'
 alias open='gnome-open'
 
-function emacs {
-    if [ -n "$TMUX" ]
-    then
-        tmux new-window "/usr/bin/emacs -nw $*"
-    else
-        gnome-terminal -t emacs -x emacs -nw $*
-    fi
-}
-
 function find {
     /usr/bin/find $* 2>/dev/null
 }

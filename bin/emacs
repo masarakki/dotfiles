@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -n "$TMUX" ]
+then
+    tmux new-window "/usr/bin/emacs -nw $@"
+else
+    gnome-terminal -t emacs -x emacs -nw $@
+fi
