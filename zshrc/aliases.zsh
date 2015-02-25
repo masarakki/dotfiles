@@ -4,7 +4,8 @@ alias ls='ls -aF --color=always'
 alias open='gnome-open'
 
 function emacs {
-    if [ "$TMUX" != "" ] ; then
+    if [ -n "$TMUX" ]
+    then
         tmux new-window "/usr/bin/emacs -nw $*"
     else
         gnome-terminal -t emacs -x emacs -nw $*
