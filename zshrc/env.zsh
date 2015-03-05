@@ -11,4 +11,3 @@ export PATH=/usr/local/heroku/bin:$PATH
 export N_PREFIX=$HOME
 
 source $HOME/.rvm/scripts/rvm
-source $HOME/.gvm/scripts/gvm

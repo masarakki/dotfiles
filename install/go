@@ -1,10 +1,7 @@
 #!/bin/bash
 
-if [ ! -e $HOME/.gvm ] ; then
-    bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-    GOVERSION=go1.3.3
-    source $HOME/.gvm/scripts/gvm
-
-    gvm install $GOVERSION
-    gvm use $GOVERSION --default
+if [ ! -e $HOME/go ] ; then
+    curl -sSL https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz > /tmp/go.tar.gz
+    tar -xvzf /tmp/go.tar.gz -C $HOME
+    rm /tmp/go.tar.gz
 fi
