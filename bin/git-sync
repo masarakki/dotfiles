@@ -8,10 +8,12 @@ git fetch --all --prune
 modified=`git status | grep modified | wc -l`
 if [ $modified -gt 0 ] ; then git stash ; fi
 branch=`git branch | grep '*' | cut -f 2 -d ' '`
-git checkout master
-git pull --rebase origin master
-if [ $has_repo = 0 ] ; then git push ${user} master; fi
-if [ $branch != 'master' ] ; then
+
+master=`git remote show origin | grep 'HEAD branch:' | cut -d : -f 2 | tr -d '[[:space:]]'`
+git checkout $master
+git pull --rebase origin $master
+if [ $has_repo = 0 ] ; then git push ${user} $master; fi
+if [ $branch != $master ] ; then
     if [ `git branch --merged | grep ${branch} | wc -l` -eq 1 ]
     then
         git branch -d ${branch}
