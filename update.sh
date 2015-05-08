@@ -52,7 +52,7 @@ gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_type --type s
 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 gsettings set org.gnome.desktop.media-handling automount-open false
-sed -iE 's/XKBDOPTIONS=.*/XKBOPTIONS="ctrl:nocaps"/' /etc/default/keyboard
+sudo sed -iE 's/XKBDOPTIONS=.*/XKBOPTIONS="ctrl:nocaps"/' /etc/default/keyboard
 
 sed -iE 's/TriggerKey=.*/TriggerKey=CTRL_SHIFT_SPACE/' ~/.config/fcitx/config
 sed -iE 's/SwitchKey=.*/SwitchKey=Disabled/' ~/.config/fcitx/config
