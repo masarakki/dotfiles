@@ -1,3 +1,8 @@
 #!/bin/sh
 
-cd ~/Music ; rsync -avz --delete . kaga:/home/masaki/Music ; cd -
+current_dir=`pwd`
+cd ~/Music
+find -type d -print0 | xargs -0 chmod 755
+find -type f -print0 | xargs -0 chmod 644
+rsync -avz --delete . kaga:/home/masaki/Music
+cd $current_dir
