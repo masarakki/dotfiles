@@ -14,7 +14,7 @@
                 flymake flymake-cursor flymake-extension flymake-html-validator
                 flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode slim-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
-                js3-mode scala-mode2 clojure-mode json-mode llvm-mode
+                js2-mode scala-mode2 clojure-mode json-mode llvm-mode
                 php-mode-improved smarty-mode
                 go-mode go-projectile go-test go-flymake go-imports go-lint
                 nginx-mode elunit cmake-mode))
@@ -29,6 +29,7 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq c-basic-offset 4 indent-tabs-mode nil)
+(setq js2-basic-offset 2)
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
@@ -46,7 +47,7 @@
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
-(add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx?$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
