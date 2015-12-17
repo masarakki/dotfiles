@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd ~/Pictures ; rsync -avz --include "*/" --include "*.CR2" --exclude "*" . kaga:/home/masaki/Pictures ; cd -
-find ~/Pictures -name \*.CR2 -exec rm \{\}
+find ~/Pictures -name \*.CR2 | xargs -n 100 rm
