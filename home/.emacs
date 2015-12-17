@@ -15,6 +15,7 @@
                 flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode slim-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
                 js2-mode scala-mode2 clojure-mode json-mode llvm-mode
+                rust-mode
                 php-mode-improved smarty-mode
                 go-mode go-projectile go-test go-flymake go-imports go-lint
                 nginx-mode elunit cmake-mode))
@@ -56,6 +57,7 @@
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.go$" . go-mode))
+(add-to-list 'auto-mode-alist '("\\.rs$" . rust-mode))
 (setq ruby-indent-level 2)
 (setq coffee-tab-width 2)
 (setq javascript-tab-width 2)
