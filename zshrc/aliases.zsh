@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 alias ls='ls -aF --color=always'
-alias open='gnome-open'
+alias open='xdg-open'
 
 function find {
     /usr/bin/find $* 2>/dev/null
