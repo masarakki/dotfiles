@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(setenv "GOROOT" "/home/masaki/go")
 
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
