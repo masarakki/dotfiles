@@ -12,7 +12,7 @@
 (el-get 'sync '(mmm-mode
                 markdown-mode gh gist git-gutter git-blame magit
                 Enhanced-Ruby-Mode ruby-end rails-el rhtml-mode ri yard-mode
-                flymake flymake-cursor flymake-extension flymake-html-validator
+                flymake flymake-cursor flymake-extension
                 flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode slim-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
                 js2-mode scala-mode2 clojure-mode json-mode llvm-mode
