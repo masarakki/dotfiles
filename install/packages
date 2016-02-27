@@ -34,7 +34,6 @@ sudo apt-get -y install\
  colordiff\
  texlive texlive-lang-cjk\
  fonts-ipafont\
- hexchat\
  python-pip
 
 hash -r
