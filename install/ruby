@@ -2,7 +2,7 @@
 
 if [ ! -e $HOME/.rvm ] ; then
     gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-    RUBY_VERSION=ruby-2.1.5
+    RUBY_VERSION=ruby-2.3.0
     \curl -sSL get.rvm.io | bash -s stable
     source $HOME/.rvm/scripts/rvm
     rvm install $RUBY_VERSION
