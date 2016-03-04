@@ -1,6 +1,8 @@
 #!/bin/sh
 
 export GOPATH=$HOME
+export GOROOT=$HOME/go
+export PATH=$HOME/bin:$GOROOT/bin:$PATH
 ghq get github/hub
 cd $GOPATH/src/github.com/github/hub
 git pull origin master
