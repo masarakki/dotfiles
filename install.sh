@@ -16,6 +16,7 @@ sudo apt-get autoremove
 $basename/install/yubikey
 $basename/install/packages
 $basename/install/ruby
+$basename/install/node
 $basename/install/go
 $basename/install/ghq
 $basename/install/hub

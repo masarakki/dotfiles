@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ ! -e $HOME/.nvm ]; then
+    export N_PREFIX=$HOME/.nvm
+    curl -L https://git.io/n-install | bash
+fi
