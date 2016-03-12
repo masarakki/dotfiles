@@ -6,6 +6,7 @@ basename=`dirname $0`
 $basename/pkg/chrome
 $basename/pkg/dropbox
 $basename/pkg/heroku
+$basename/pkg/slack
 
 sudo apt-get update
 sudo apt-get -y upgrade

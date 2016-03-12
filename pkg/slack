@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if ! dpkg -l slack-desktop > /dev/null 2>&1 ; then
+    wget "https://slack-ssb-updates.global.ssl.fastly.net/linux_releases/slack-desktop-2.0.1-amd64.deb"
+    sudo dpkg -i slack-desktop-2.0.1-amd64.deb
+    rm slack-desktop-2.0.1-amd64.deb
+fi
