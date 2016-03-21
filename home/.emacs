@@ -32,6 +32,8 @@
 (setq-default tab-width 4)
 (setq c-basic-offset 4 indent-tabs-mode nil)
 (setq js2-basic-offset 2)
+(setq js-indent-level 2)
+(setq json-mode:indent-width 2)
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
