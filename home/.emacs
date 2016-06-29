@@ -35,6 +35,7 @@
 (setq js-indent-level 2)
 (setq json-mode:indent-width 2)
 
+
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
@@ -51,7 +52,7 @@
 (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx?$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx?$" . js2-jsx-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
@@ -103,6 +104,5 @@
 (custom-set-faces
  '(flymake-errline ((((class color)) (:background "red" :foreground "white") )))
  '(flymake-warnline ((((class color)) (:background "gray")))))
-
 (add-hook 'before-save-hook 'gofmt-before-save)
 ;(setq flymake-coffee-coffeelint-configuration-file "~/config/coffeelint.json")
