@@ -26,3 +26,4 @@ alias nslookup="rlwrap /usr/bin/nslookup"
 alias sqlite3="rlwrap /usr/bin/sqlite3"
 alias pr='hub pull-request'
 alias sy='git sync'
+alias gr='./gradlew'
