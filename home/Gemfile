@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'earthquake'
-gem 'rails', '4.2.5'
+gem 'rails', '5.0.0.1'
 gem 'rspec'
 gem 'redcarpet'
 gem 'gist'
@@ -12,3 +12,4 @@ gem 'bundler'
 gem 'pry'
 gem 'pry-doc'
 gem 'rubocop'
+gem 'travis'
