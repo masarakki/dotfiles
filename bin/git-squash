@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -n "$1" ]
+then
+    branch=$1
+else
+    branch="master"
+fi
+git rebase -i --autosquash --keep-empty ${branch}
