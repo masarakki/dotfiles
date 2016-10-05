@@ -21,6 +21,7 @@ if [ -e $HOME/Dropbox ]; then
     ln -nfs $HOME/Dropbox/.gitconfig $HOME/.gitconfig
     ln -nfs $HOME/Dropbox/.ssh $HOME/.ssh
     ln -nfs $HOME/Dropbox/.mozc $HOME/.mozc
+    ln -nfs $HOME/Dropbox/.gemrc $HOME/.gemrc
     chmod 600 $HOME/.ssh/*
 fi
 
