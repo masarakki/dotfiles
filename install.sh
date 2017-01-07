@@ -22,5 +22,6 @@ $basename/install/ghq
 $basename/install/hub
 $basename/install/fonts
 $basename/install/oh-my-zsh
+$basename/install/rust
 
 $basename/update.sh
