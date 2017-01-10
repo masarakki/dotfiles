@@ -10,12 +10,12 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 
 (el-get 'sync '(mmm-mode
-                markdown-mode gh gist git-gutter git-blame magit
-                Enhanced-Ruby-Mode ruby-end rails-el rhtml-mode ri yard-mode
+                markdown-mode gh gist git-gutter mo-git-blame magit
+                enh-ruby-mode ruby-end rails-el rhtml-mode ri yard-mode
                 flymake flymake-cursor flymake-extension
                 flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode slim-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
-                js2-mode scala-mode2 clojure-mode json-mode llvm-mode
+                js2-mode scala-mode clojure-mode json-mode llvm-mode
                 rust-mode
                 php-mode-improved smarty-mode
                 go-mode go-projectile go-test go-flymake go-imports go-lint
@@ -34,7 +34,6 @@
 (setq js2-basic-offset 2)
 (setq js-indent-level 2)
 (setq json-mode:indent-width 2)
-
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
@@ -106,4 +105,4 @@
  '(flymake-errline ((((class color)) (:background "red" :foreground "white") )))
  '(flymake-warnline ((((class color)) (:background "gray")))))
 (add-hook 'before-save-hook 'gofmt-before-save)
-;(setq flymake-coffee-coffeelint-configuration-file "~/config/coffeelint.json")
+(global-git-gutter-mode +1)
