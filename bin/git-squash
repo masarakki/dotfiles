@@ -1,9 +1,5 @@
 #!/bin/sh
 
-if [ -n "$1" ]
-then
-    branch=$1
-else
-    branch="master"
-fi
+branch=`git remote show origin | grep 'HEAD branch' | sed 's/HEAD branch://' | sed -e 's/^[ \t]*//'`
+
 git rebase -i --autosquash --keep-empty ${branch}
