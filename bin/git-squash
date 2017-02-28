@@ -2,4 +2,7 @@
 
 branch=`git remote show origin | grep 'HEAD branch' | sed 's/HEAD branch://' | sed -e 's/^[ \t]*//'`
 
+modified=`git status | grep modified | wc -l`
+if [ $modified -gt 0 ] ; then git stash ; fi
 git rebase -i --autosquash --keep-empty ${branch}
+if [ $modified -gt 0 ] ; then git stash pop ; fi
