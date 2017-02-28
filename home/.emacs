@@ -29,7 +29,7 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 (setq c-basic-offset 4 indent-tabs-mode nil)
 (setq js2-basic-offset 2)
 (setq js-indent-level 2)
