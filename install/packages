@@ -20,7 +20,6 @@ sudo apt-get -y install\
  libxslt1.1 libxslt1-dev\
  openssh-server libssl-dev\
  nkf\
- openjdk-7-jre openjdk-7-jre-headless openjdk-7-jdk\
  libv8-dev\
  compizconfig-settings-manager\
  convmv\

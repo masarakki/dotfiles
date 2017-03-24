@@ -13,8 +13,8 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 sudo apt-get autoremove
 
-$basename/install/yubikey
 $basename/install/packages
+$basename/install/yubikey
 $basename/install/ruby
 $basename/install/node
 $basename/install/go
