@@ -7,6 +7,7 @@ $basename/pkg/chrome
 $basename/pkg/dropbox
 $basename/pkg/heroku
 $basename/pkg/slack
+$basename/pkg/docker
 
 sudo apt-get update
 sudo apt-get -y upgrade
@@ -15,6 +16,7 @@ sudo apt-get autoremove
 
 $basename/install/packages
 $basename/install/yubikey
+$basename/install/docker
 $basename/install/ruby
 $basename/install/node
 $basename/install/go
