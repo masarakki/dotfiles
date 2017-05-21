@@ -25,6 +25,7 @@ sudo apt-get -y install\
  convmv\
  libdbus-glib-1-dev\
  mysql-server libmysql++-dev\
+ libpq-dev\
  redis-server\
  xsel\
  libsasl2-dev\
