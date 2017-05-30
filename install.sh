@@ -10,6 +10,7 @@ $basename/pkg/heroku
 $basename/pkg/slack
 $basename/pkg/docker
 $basename/pkg/yarn
+$basename/pkg/ansible
 
 sudo apt-get update
 sudo apt-get -y upgrade

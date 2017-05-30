@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ ! -e /etc/apt/sources.list.d/ansible-ubuntu-ansible-`lsb_release -cs`.list ]; then
+    sudo apt-add-repository ppa:ansible/ansible
+fi

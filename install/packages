@@ -34,6 +34,7 @@ sudo apt-get -y install\
  colordiff\
  texlive texlive-lang-cjk\
  fonts-ipafont\
- python-pip
+ python-pip\
+ ansible
 
 hash -r
