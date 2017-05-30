@@ -29,5 +29,6 @@ $basename/install/fonts
 $basename/install/oh-my-zsh
 $basename/install/rust
 $basename/install/aws
+$basename/install/terraform
 
 $basename/update.sh
