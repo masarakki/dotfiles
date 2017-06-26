@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'earthquake'
-gem 'rails', '5.0.0.1'
+gem 'rails'
 gem 'rspec'
 gem 'redcarpet'
 gem 'gist'

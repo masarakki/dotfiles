@@ -8,7 +8,6 @@ ln -nfs $dotdir/home/.emacs $HOME/.emacs
 ln -nfs $dotdir/home/.tmux.conf $HOME/.tmux.conf
 ln -nfs $dotdir/home/.pryrc $HOME/.pryrc
 ln -nfs $dotdir/home/Gemfile $HOME/Gemfile
-ln -nfs $dotdir/home/Gemfile.lock $HOME/Gemfile.lock
 ln -nfs $dotdir/home/.gitignore $HOME/.gitignore
 find $dotdir/zshrc/* -type f -print | xargs -I {} ln -nfs {} $HOME/.oh-my-zsh/custom/
 
