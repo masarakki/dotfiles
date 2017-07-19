@@ -6,7 +6,6 @@ basename=`dirname $0`
 $basename/install/pre
 $basename/pkg/chrome
 $basename/pkg/dropbox
-$basename/pkg/heroku
 $basename/pkg/slack
 $basename/pkg/docker
 $basename/pkg/yarn
