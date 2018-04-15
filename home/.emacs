@@ -10,14 +10,13 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 
 (el-get 'sync '(mmm-mode
-                markdown-mode gh gist git-gutter mo-git-blame magit
+                markdown-mode gh gist git-gutter magit
                 enh-ruby-mode ruby-end rails-el rhtml-mode ri yard-mode
                 flymake flymake-cursor flymake-extension
                 flymake-ruby flymake-coffee flymake-haml flymake-css flymake-sass flymake-shell
                 coffee-mode haml-mode slim-mode sass-mode scss-mode yaml-mode less-css-mode review-mode
                 js2-mode scala-mode clojure-mode json-mode llvm-mode
                 rust-mode
-                php-mode-improved smarty-mode
                 go-mode go-projectile go-test go-flymake go-imports go-lint
                 nginx-mode elunit cmake-mode))
 
@@ -46,9 +45,6 @@
 (add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.d?tpl$" . html-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php$" . html-mode))
-(add-to-list 'auto-mode-alist '("\\.tmpl$" . html-mode))
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
 (add-to-list 'auto-mode-alist '(".babelrc" . json-mode))
