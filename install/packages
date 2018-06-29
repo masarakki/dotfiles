@@ -24,7 +24,7 @@ sudo apt-get -y install\
  compizconfig-settings-manager\
  convmv\
  libdbus-glib-1-dev\
- mysql-server libmysql++-dev\
+ libmysql++-dev\
  libpq-dev\
  redis-server\
  xsel\
