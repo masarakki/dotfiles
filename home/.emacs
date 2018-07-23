@@ -78,6 +78,8 @@
           (process-send-string proc text)
           (process-send-eof proc))))
 
+(setq ruby-insert-encoding-magic-comment nil)
+
 (defun make-file-executable ()
   "Make the file of this buffer executable"
   (save-restriction
