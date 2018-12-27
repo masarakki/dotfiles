@@ -59,11 +59,13 @@
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.go$" . go-mode))
 (add-to-list 'auto-mode-alist '("\\.rs$" . rust-mode))
-(setq ruby-indent-level 2)
 (setq coffee-tab-width 2)
 (setq javascript-tab-width 2)
+
+(setq ruby-indent-level 2)
 (setq ruby-indent-tabs-mode nil)
 (setq ruby-deep-indent-paren '(t))
+(setq ruby-insert-encoding-magic-comment nil)
 
 (setq require-final-newline t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
