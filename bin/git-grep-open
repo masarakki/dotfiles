@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-file=`git grep -z $@ | peco | cut -f 1 -d ''`
+file=`git grep $@ | peco | cut -f 1 -d ':'`
 if [ -n "$file" ]; then
     emacs $file
 fi
