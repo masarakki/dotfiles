@@ -1,8 +1,16 @@
 #!/bin/sh
 
+if [ -x /usr/local/bin/emacs ]
+then
+  emacs=/usr/local/bin/emacs
+else
+  emacs=/usr/bin/emacs
+fi
+
+
 if [ -n "$TMUX" ]
 then
-    tmux new-window "/usr/bin/emacs -nw $@"
+    tmux new-window "$emacs -nw $@"
 else
     gnome-terminal -t emacs -x emacs -nw $@
 fi
