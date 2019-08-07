@@ -3,9 +3,7 @@
 sudo apt-get -y install\
  build-essential texinfo autoconf automake\
  google-chrome-stable\
- dropbox\
  git gitk\
- mercurial\
  zsh\
  lv\
  rlwrap\
@@ -13,7 +11,7 @@ sudo apt-get -y install\
  vim emacs\
  fcitx-mozc\
  curl libcurl4-openssl-dev\
- libreadline6-dev\
+ libreadline-dev\
  bison\
  sqlite3 libsqlite3-dev\
  libxml2 libxml2-dev\
@@ -30,7 +28,7 @@ sudo apt-get -y install\
  xsel\
  libsasl2-dev\
  imagemagick libmagickcore-dev\
- libav-tools\
+ ffmpeg\
  colordiff\
  texlive texlive-lang-cjk\
  fonts-ipafont\
