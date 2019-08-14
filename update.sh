@@ -31,23 +31,19 @@ if [ -e /etc/fonts/conf.d/65-droid-sans-fonts.conf ] ; then
     cd -
 fi
 
-if [ `xrandr | grep current | sed -E 's/.*current ([0-9]+) x ([0-9]+).*/\2/'` -gt 2048 ]
-then
-    fontsize=16
-else
-    fontsize=14
-fi
+UUID=$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ font "Ricty Regular 14"
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ login-shell false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ use-custome-command true
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ custome-command '/usr/bin/tmux'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ default-size-rows 32
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ default-size-columns 128
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ background-color '#FFFFFF'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ audible-bell false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ bold-is-bright true
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${UUID}/ visible-name Default
 
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_system_font --type bool false
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Ricty Regular ${fontsize}"
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_custom_command --type bool true
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/custom_command --type string "tmux"
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_rows --type int 28
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/default_size_columns --type int 108
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#FFFFFFFFFFFF"
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/use_theme_colors --type bool true
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_darkness --type float 0.98
-gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_type --type string "transparent"
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 gsettings set org.gnome.desktop.media-handling automount-open false
