@@ -32,6 +32,7 @@
 (setq js2-basic-offset 2)
 (setq js-indent-level 2)
 (setq json-mode:indent-width 2)
+(global-auto-revert-mode 1)
 
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
