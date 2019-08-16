@@ -10,7 +10,7 @@ function peco-src () {
 }
 
 function gem-src () {
-    local selected_dir=$(( ls $GEM_HOME/gems ) | peco --query "$LBUFFER")
+    local selected_dir=$(( \ls $GEM_HOME/gems ) | peco --query "$LBUFFER")
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${GEM_HOME}/gems/${selected_dir}"
         zle accept-line
