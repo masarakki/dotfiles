@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if ! dpkg -l discord > /dev/null 2>&1 ; then
+    curl -L https://discordapp.com/api/download?platform=linux&format=deb --output discord.deb
+    sudo dpkg -i discord.deb
+    rm discord.deb
+fi
