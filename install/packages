@@ -2,6 +2,7 @@
 
 sudo apt-get -y install\
  build-essential texinfo autoconf automake\
+ fonts-noto-cjk fonts-noto-cjk-extra\
  google-chrome-stable\
  git gitk\
  zsh\
