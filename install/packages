@@ -31,7 +31,7 @@ sudo apt-get -y install\
  imagemagick libmagickcore-dev\
  ffmpeg\
  colordiff\
- texlive texlive-lang-cjk\
+ texlive texlive-lang-cjk texlive-fonts-extra texlive-latex-extra xzdec\
  fonts-ipafont\
  python-pip\
  ansible

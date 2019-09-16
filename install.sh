@@ -29,5 +29,6 @@ $basename/install/oh-my-zsh
 $basename/install/rust
 $basename/install/aws
 $basename/install/terraform
+$basename/install/texlive
 
 $basename/update.sh
