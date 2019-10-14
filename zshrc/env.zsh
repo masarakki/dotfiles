@@ -10,9 +10,11 @@ export GOBIN=$GOPATH/bin
 export N_PREFIX=$HOME/.nvm
 export PYENV_ROOT=$HOME/.pyenv
 export PYTHON_CONFIGURE_OPTS='--enable-shared'
-export PATH=$HOME/bin:$GOROOT/bin:$N_PREFIX/bin:$PYENV_ROOT/bin:$DOTFILE_ROOT/bin:$HOME/.tfenv/bin:$HOME/.local/bin:$PATH
+export ANYENV_ROOT=$HOME/.anyenv
+export PATH=$HOME/bin:$GOROOT/bin:$N_PREFIX/bin:$ANYENV_ROOT/bin:$PYENV_ROOT/bin:$DOTFILE_ROOT/bin:$HOME/.tfenv/bin:$HOME/.local/bin:$PATH
 
 source $HOME/.cargo/env
 source $HOME/.rvm/scripts/rvm
 
 eval "$(pyenv init -)"
+eval "$(anyenv init -)"
