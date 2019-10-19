@@ -3,4 +3,5 @@
 if [ ! -e $HOME/.anyenv ] ; then
     git clone https://github.com/anyenv/anyenv $HOME/.anyenv
     yes | $HOME/.anyenv/bin/anyenv install --init
+    git clone https://github.com/znz/anyenv-update $HOME/.anyenv/plugins/anyenv-update
 fi
