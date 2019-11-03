@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/zsh
+
+basename=`dirname $0`
 
 if [ ! -e $HOME/.anyenv ] ; then
     git clone https://github.com/anyenv/anyenv $HOME/.anyenv
@@ -8,4 +10,7 @@ fi
 yes n | anyenv install pyenv
 yes n | anyenv install nodenv
 
-exec zsh
+eval "$(anyenv init -)"
+
+$basename/python
+$basename/node
