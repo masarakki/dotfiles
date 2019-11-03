@@ -21,8 +21,6 @@ $basename/install/yubikey
 $basename/install/docker
 $basename/install/anyenv
 $basename/install/ruby
-$basename/install/python
-$basename/install/node
 $basename/install/go
 $basename/install/ghq
 $basename/install/hub
