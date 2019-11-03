@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ ! -e $HOME/.nvm ]; then
-    export N_PREFIX=$HOME/.nvm
-    curl -L https://git.io/n-install | bash
+node_version=`nodenv install -l | grep -E "^[ 0-9\.]+$" | sort -V | tail -n 1`
+if [ -z `nodenv versions | grep $node_version` ]; then
+    nodenv install $node_version
+    nodenv global $node_version
 fi
-sudo apt-get install yarn

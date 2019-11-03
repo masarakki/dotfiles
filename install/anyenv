@@ -4,3 +4,8 @@ if [ ! -e $HOME/.anyenv ] ; then
     git clone https://github.com/anyenv/anyenv $HOME/.anyenv
     yes | $HOME/.anyenv/bin/anyenv install --init
 fi
+
+yes n | anyenv install pyenv
+yes n | anyenv install nodenv
+
+exec zsh
