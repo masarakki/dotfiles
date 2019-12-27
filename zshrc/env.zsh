@@ -13,6 +13,5 @@ export ANYENV_ROOT=$HOME/.anyenv
 export PATH=$HOME/bin:$GOROOT/bin:$N_PREFIX/bin:$ANYENV_ROOT/bin:$DOTFILE_ROOT/bin:$HOME/.tfenv/bin:$HOME/.local/bin:$PATH
 
 source $HOME/.cargo/env
-source $HOME/.rvm/scripts/rvm
 
 eval "$(anyenv init -)"

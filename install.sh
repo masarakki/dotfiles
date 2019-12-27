@@ -20,7 +20,6 @@ $basename/install/packages
 $basename/install/yubikey
 $basename/install/docker
 $basename/install/anyenv
-$basename/install/ruby
 $basename/install/go
 $basename/install/ghq
 $basename/install/hub

@@ -7,10 +7,12 @@ if [ ! -e $HOME/.anyenv ] ; then
     yes | $HOME/.anyenv/bin/anyenv install --init
 fi
 
+yes n | anyenv install rbenv
 yes n | anyenv install pyenv
 yes n | anyenv install nodenv
 
 eval "$(anyenv init -)"
 
+$basename/ruby
 $basename/python
 $basename/node
