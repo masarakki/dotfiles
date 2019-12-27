@@ -8,10 +8,12 @@ if [ ! -e $HOME/.anyenv ] ; then
     git clone https://github.com/znz/anyenv-update $HOME/.anyenv/plugins/anyenv-update
 fi
 
+yes n | anyenv install rbenv
 yes n | anyenv install pyenv
 yes n | anyenv install nodenv
 
 eval "$(anyenv init -)"
 
+$basename/ruby
 $basename/python
 $basename/node
