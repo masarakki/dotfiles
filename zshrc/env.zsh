@@ -3,6 +3,7 @@
 export DOTFILE_ROOT=`readlink $0 | xargs dirname |xargs dirname`
 export EDITOR='/usr/bin/vim'
 export PAGER='/usr/bin/lv -c'
+export BAT_PAGER='less'
 
 export GOROOT=$HOME/go
 export GOPATH=$HOME
