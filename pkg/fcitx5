@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ ! -e /etc/apt/sources.list.d/ikuya-fruitsbasket-ubuntu-fcitx5-`lsb_release -cs`.list ]; then
+    sudo apt-add-repository ppa:ikuya-fruitsbasket/fcitx5
+fi
