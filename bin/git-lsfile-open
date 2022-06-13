@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+file=`git ls-files | peco | cut -f 1 -d ':'`
+if [ -n "$file" ]; then
+    emacs $file
+fi

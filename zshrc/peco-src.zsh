@@ -19,7 +19,13 @@ function gem-src () {
     zle clear-screen
 }
 
+function lsfile-src () {
+    git-lsfile-open
+}
+
 zle -N peco-src
 bindkey '^S' peco-src
 zle -N gem-src
 bindkey '^V' gem-src
+zle -N lsfile-src
+bindkey '^X^F' lsfile-src
