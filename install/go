@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ ! -e $HOME/go ] ; then
-    curl -sSL https://storage.googleapis.com/golang/go1.12.7.linux-amd64.tar.gz > /tmp/go.tar.gz
-    tar -xvzf /tmp/go.tar.gz -C $HOME
-    rm /tmp/go.tar.gz
+go_version=`goenv install -l | tail -n 1`
+if [ -z "`goenv versions | grep $go_version`" ] ; then
+    goenv install $go_version
+    goenv global $go_version
 fi
