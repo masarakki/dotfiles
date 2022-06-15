@@ -7,7 +7,7 @@ export BAT_PAGER='less'
 
 export PYTHON_CONFIGURE_OPTS='--enable-shared'
 export ANYENV_ROOT=$HOME/.anyenv
-export PATH=$HOME/bin:$GOROOT/bin:$N_PREFIX/bin:$ANYENV_ROOT/bin:$DOTFILE_ROOT/bin:$HOME/.tfenv/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/bin:$ANYENV_ROOT/bin:$DOTFILE_ROOT/bin:$HOME/.local/bin:$PATH
 
 source $HOME/.cargo/env
 
