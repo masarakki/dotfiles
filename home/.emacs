@@ -51,7 +51,7 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . json-mode))
 (add-to-list 'auto-mode-alist '(".babelrc" . json-mode))
-(add-to-list 'auto-mode-alist '("\\.m?jsx?$" . js2-jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.m?jsx?$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
