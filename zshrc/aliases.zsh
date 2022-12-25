@@ -15,6 +15,7 @@ function google {
 alias mysql='mysql -p'
 alias emasc='emacs'
 alias diff='colordiff'
+alias cat="batcat -p"
 alias rm='rm -f'
 alias less="lv -c"
 alias be="bundle exec"

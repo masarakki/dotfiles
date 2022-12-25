@@ -7,6 +7,7 @@ sudo apt-get -y install\
  git gitk hub\
  zsh\
  lv\
+ bat\
  rlwrap\
  tmux\
  vim emacs\
