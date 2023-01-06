@@ -27,4 +27,3 @@ alias nslookup="rlwrap /usr/bin/nslookup"
 alias sqlite3="rlwrap /usr/bin/sqlite3"
 alias sy='git sync'
 alias gr='./gradlew'
-alias aws='docker run --rm -it -v ~/.aws:/.aws -v $(pwd):/aws -u $(id -u):$(id -g) amazon/aws-cli'
